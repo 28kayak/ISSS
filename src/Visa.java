@@ -11,4 +11,5 @@ public class Visa
 		this.period = period;
 		this.expiration = expire;
 	}
+	
 }

@@ -72,4 +72,25 @@ public class InternationalPerson
 	{
 		visa.expiration = expiration;
 	}
+	
+	public void showVisaStatus()
+	{
+		System.out.println("========Visa Status=======");
+		System.out.println("Visa type: " + visa.visatype);
+		System.out.println("Visa period:" + visa.period);
+		System.out.println("Visa exparation" + visa.expiration );
+		if(visa.visatype.equalsIgnoreCase("F"))
+		{
+			System.out.println("Student Visa: this visa allows to follow courses, /n IF and only IF the student is paying the fees.");
+			
+		}else if(visa.visatype.equalsIgnoreCase("J"))
+		{
+			System.out.println("Professor Visa: this visa allows to work as faculty member for the University");
+		}
+		else if(visa.visatype.equalsIgnoreCase("H"))
+		{
+			System.out.println("professional Visa: it allows to work as intern for the University");
+		}
+			
+	}
 }

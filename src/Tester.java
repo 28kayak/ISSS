@@ -20,7 +20,7 @@ public class Tester {
 			System.out.println("What do you want to do?");
 			System.out.println("1: add person");
 			//System.out.println("2: add student");
-			System.out.println("3: remove person");
+			System.out.println("2: remove person");
 			System.out.println("4: check visa status");
 			System.out.println("5: quit");
 			choice = scan.nextInt();
@@ -54,8 +54,7 @@ public class Tester {
 							
 						}
 						else
-						{
-							
+						{	
 							interPeople[maxNum] = newProf;
 							System.out.println(interPeople[maxNum].getName());
 							System.out.println(interPeople[maxNum].getIntr_addr());
@@ -63,15 +62,24 @@ public class Tester {
 							System.out.println(interPeople[maxNum].getUsAddr());
 							System.out.println(interPeople[maxNum].getVisatype());
 							System.out.println(interPeople[maxNum].getVisaExp());
-							
 						}
 					}//if(j)
 					else if(visatype.equalsIgnoreCase("F"))
 					{
 						//Do the same thing with part 1
-						//but use Student class
+						//but use Student constructor
 					}
+					else if(visatype.equalsIgnoreCase("H"))
+					{
+						//Do the same thing with part 1 
+						//but use International People constructor
+					}
+					break;
+				case 2://remove
 					
+					
+				case 3://
+				case 4: //
 					
 			
 			
