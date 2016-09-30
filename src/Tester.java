@@ -75,11 +75,25 @@ public class Tester {
 						//but use International People constructor
 					}
 					break;
+					
 				case 2://remove
+					System.out.println("Enter id to delete");
+					if(id > maxNum)
+					{
+						System.out.println("id is too big for this list");
+					}
+					else
+					{
+						
+					}
 					
 					
-				case 3://
-				case 4: //
+				case 3://check visa status
+				case 4://quit
+					flag = false;
+					break;
+				default: 
+					System.out.println("Wrong number is entered");
 					
 			
 			
